@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.userinterface.BoekingenController">
+   <children>
+      <HBox layoutX="70.0" layoutY="100.0" prefHeight="30.0" prefWidth="490.0">
+         <children>
+            <Label text="Naam:" />
+            <TextField fx:id="naamTextfield" prefHeight="26.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <Label fx:id="voerGegevensInLabel" layoutX="70.0" layoutY="44.0" text="Voer uw gegevens in!" />
+      <HBox layoutX="70.0" layoutY="141.0" prefHeight="30.0" prefWidth="490.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="34.0" text="Adres:" />
+            <TextField fx:id="adresTextfield" prefHeight="26.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="70.0" layoutY="185.0" prefHeight="30.0" prefWidth="490.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="158.0" text="Aankomstdatum:" />
+            <DatePicker fx:id="aankomstDatumDatepicker" prefHeight="26.0" prefWidth="294.0">
+               <HBox.margin>
+                  <Insets left="27.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox layoutX="70.0" layoutY="230.0" prefHeight="30.0" prefWidth="490.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="135.0" text="Vertrekdatum:" />
+            <DatePicker fx:id="vertrekDatumDatepicker" prefHeight="26.0" prefWidth="294.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox layoutX="70.0" layoutY="273.0" prefHeight="30.0" prefWidth="490.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="96.0" text="Kamertype:" />
+            <ComboBox fx:id="kamertypeCombobox" prefHeight="26.0" prefWidth="298.0">
+               <HBox.margin>
+                  <Insets left="88.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox layoutX="393.0" layoutY="339.0" prefHeight="46.0" prefWidth="158.0">
+         <children>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleResetButton" prefHeight="25.0" prefWidth="68.0" text="Reset" />
+            <Button fx:id="boekButton" mnemonicParsing="false" onAction="#handleBoekButton" prefHeight="25.0" prefWidth="68.0" text="Boek">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
